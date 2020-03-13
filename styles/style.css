@@ -1,0 +1,26 @@
+
+.header-pad {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .header-pad {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-pad {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-pad {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+}
