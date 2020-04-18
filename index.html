@@ -27,6 +27,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha256-/ijcOLwFf26xEYAjW75FizKVo5tnTYiQddPZoLUHHZ8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+  <script src="/scripts/repos.js"></script>
 
   <script src="https://www.googletagmanager.com/gtag/js?id=UA-161214318-1" async></script>
   <script>
@@ -71,39 +72,13 @@
       <hr class="my-5">
     </div>
 
-    <div class="container text-center my-4 w-50">
+    <div id="repos" class="container text-center my-4 w-50">
       <h3>Projects</h3>
       <p class="lead mb-4">Here are the projects that I'd been working on. Feel free to explore.</p>
-
-      <div class="card shadow w-75 mx-auto mb-5">
-        <div class="card-body">
-          <h5 class="card-title">mp3tag.js</h5>
-          <p class="card-text">Edit your MP3 metadata here easily. All done with JavaScript only!</p>
-        </div>
-
-        <footer class="card-footer">
-          <a href="https://mp3tag.js.org" class="btn btn-primary btn-block stretched-link" role="button">
-            <img src="https://mp3tag.js.org/favicon-32x32.png" alt="mp3tag.js Logo"> Open
-          </a>
-        </footer>
-      </div>
-
-      <div class="card shadow w-75 mx-auto mb-5">
-        <div class="card-body">
-          <h5 class="card-title">mp3tag</h5>
-          <p class="card-text">MP3 tagging app built with Electron</p>
-        </div>
-
-        <footer class="card-footer">
-          <a href="https://mp3tag.js.org/mp3tag" class="btn btn-primary btn-block stretched-link" role="button">
-            <img src="https://mp3tag.js.org/favicon-32x32.png" alt="mp3tag.js Logo"> Open
-          </a>
-        </footer>
-      </div>
-      <hr class="my-5">
     </div>
 
     <div class="container text-center my-4 w-50">
+      <hr class="my-5">
       <h3>Patreon</h3>
       <p class="lead">If you wanted to support me, become a patreon!</p>
       <a href="https://www.patreon.com/eidoriantan">
@@ -111,6 +86,19 @@
       </a>
     </div>
   </main>
+
+  <template id="repo-template">
+    <div class="card shadow w-75 mx-auto mb-5">
+      <div class="card-body">
+        <h5 class="card-title" data-temp="name"></h5>
+        <p class="card-text" data-temp="desc"></p>
+      </div>
+
+      <footer class="card-footer">
+        <a href="" class="btn btn-primary btn-block stretched-link" role="button" data-temp="link">Visit</a>
+      </footer>
+    </div>
+  </template>
 
   <footer class="bg-dark text-white py-3 px-3 px-md-5">
     <div class="row px-md-5">
