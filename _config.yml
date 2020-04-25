@@ -1,0 +1,13 @@
+
+title: eidoriantan
+tagline: My personal website using Jekyll on GitHub pages
+author: Adriane Justine Tan
+email: eidoriantan@gmail.com
+baseurl: "/"
+url: "https://eidoriantan.github.io"
+logo: /assets/images/logo.png
+google_site_verification: pygHTY6j2sle4JJ1YmSCYlf8nxIxnq4u9bHe48Mc9do
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

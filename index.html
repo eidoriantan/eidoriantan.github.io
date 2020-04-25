@@ -1,133 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="author" content="Adriane Justine Tan <eidoriantan@gmail.com>">
-  <meta name="description" content="Visit my website and explore my projects and repositories">
-  <meta name="keywords" content="eidoriantan, personal, website, homepage">
-  <meta name="theme-color" content="#121212">
-  <meta name="msapplication-TileColor" content="#121212">
+---
+layout: default
+title: eidoriantan
+description: >-
+  Visit my personal website to know more about me and you can explore the
+  projects I built.
+keywords: eidoriantan, jekyll, personal, website, homepage
+---
+<main class="main container">
+  <div class="text-center mx-auto my-5 w-50">
+    <h3>Adriane Justine Tan</h3>
+    <p class="lead mb-5">
+      I’m a senior high school student at University of Negros Occidental –
+      Recoletos here in Bacolod City, Philippines. I’m currently learning web
+      development and Japanese language.
+    </p>
 
-  <link href="/LICENSE" rel="license">
-  <link href="/site.webmanifest" rel="manifest">
-  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
-  <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
-  <link href="/safari-pinned-tab.svg" rel="mask-icon" color="#121212">
-  <link href="https://cdnjs.cloudflare.com/" rel="preconnect" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/" rel="dns-prefetch">
-  <link href="https://kit.fontawesome.com/" rel="preconnect" crossorigin="anonymous">
-  <link href="https://kit.fontawesome.com/" rel="dns-prefetch">
-  <link href="https://eidoriantan.github.io/" rel="canonical">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
-  <link href="/styles/style.css" rel="stylesheet">
+    <p class="lead mb-5" lang="ja">
+      エイドリアンです。僕は高校生です、そしてウェブデベロップメントと日本語を勉強しています。
+    </p>
+    <hr class="my-5">
+  </div>
 
-  <script src="https://kit.fontawesome.com/9cb9988aa5.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha256-/ijcOLwFf26xEYAjW75FizKVo5tnTYiQddPZoLUHHZ8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
-  <script src="/scripts/home.js"></script>
+  <div id="repos" class="text-center mx-auto my-5 w-50">
+    <h3>Projects</h3>
+    <p class="lead mb-4">
+      Here are the projects that I'd been working on. Feel free to explore.
+    </p>
+  </div>
 
-  <script src="https://www.googletagmanager.com/gtag/js?id=UA-161214318-1" async></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag () { dataLayer.push(arguments) }
-
-    gtag('js', new Date())
-    gtag('config', 'UA-161214318-1', {
-      'anonymize_ip': true
-    })
-  </script>
-
-  <title>eidoriantan</title>
-</head>
-
-<body>
-  <header class="navbar navbar-expand-md navbar-dark bg-dark header-pad sticky-top">
-    <a href="https://eidoriantan.github.io" class="navbar-brand">
-      <img src="/images/logo.png" alt="eidoriantan" width="32" height="32" class="d-inline-block align-top">
-      eidoriantan
+  <div class="text-center mx-auto my-5 w-50">
+    <hr class="my-5">
+    <h3>Patreon</h3>
+    <p class="lead">If you wanted to support me, become a patreon!</p>
+    <a href="https://www.patreon.com/eidoriantan">
+      <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="217" height="51" alt="Patreon">
     </a>
+  </div>
+</main>
 
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <nav id="header-nav" class="collapse navbar-collapse" aria-label="Main Navigator">
-      <ul class="navbar-nav">
-        <li id="nav-item-home" class="nav-item">
-          <a href="/" class="nav-link active">
-            <i class="fas fa-home" aria-hidden="true"></i> Home
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="py-5">
-    <div class="container text-center my-4 w-50">
-      <h3>About Me</h3>
-      <p class="lead mb-5">I’m a senior high school student at University of Negros Occidental – Recoletos here in Bacolod City, Philippines. I’m currently learning web development and Japanese language.</p>
-      <hr class="my-5">
+<template id="repo-template">
+  <div class="card shadow w-75 mx-auto mb-5">
+    <div class="card-body">
+      <h5 class="card-title" data-temp="name"></h5>
+      <p class="card-text" data-temp="desc"></p>
     </div>
 
-    <div id="repos" class="container text-center my-4 w-50">
-      <h3>Projects</h3>
-      <p class="lead mb-4">Here are the projects that I'd been working on. Feel free to explore.</p>
-    </div>
+    <footer class="card-footer">
+      <a href="" class="btn btn-primary btn-block stretched-link" role="button" data-temp="link">Visit</a>
+    </footer>
+  </div>
+</template>
 
-    <div class="container text-center my-4 w-50">
-      <hr class="my-5">
-      <h3>Patreon</h3>
-      <p class="lead">If you wanted to support me, become a patreon!</p>
-      <a href="https://www.patreon.com/eidoriantan">
-        <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="217" height="51" alt="Patreon">
-      </a>
-    </div>
-  </main>
-
-  <template id="repo-template">
-    <div class="card shadow w-75 mx-auto mb-5">
-      <div class="card-body">
-        <h5 class="card-title" data-temp="name"></h5>
-        <p class="card-text" data-temp="desc"></p>
-      </div>
-
-      <footer class="card-footer">
-        <a href="" class="btn btn-primary btn-block stretched-link" role="button" data-temp="link">Visit</a>
-      </footer>
-    </div>
-  </template>
-
-  <footer class="bg-dark text-white py-3 px-3 px-md-5">
-    <div class="row px-md-5">
-      <div class="col-xs-12 col-sm-7">
-        <h3>eidoriantan</h3>
-      </div>
-
-      <div class="mt-3 mt-sm-0 col-xs-12 col-sm-5">
-        <h3>Social Media</h3>
-
-        <a href="https://www.patreon.com/eidoriantan" class="d-block text-white">
-          <i class="fab fa-patreon" aria-hidden="true"></i> Patreon
-        </a>
-
-        <a href="https://twitter.com/eidoriantan" class="d-block text-white">
-          <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
-        </a>
-
-        <a href="https://github.com/eidoriantan" class="d-block text-white">
-          <i class="fab fa-github" aria-hidden="true"></i> GitHub
-        </a>
-      </div>
-    </div>
-
-    <hr class="my-3">
-
-    <div class="text-muted">
-      <span>Copyright &copy; 2019 - <span id="current-year"></span>, Adriane Justine Tan</span>
-    </div>
-  </footer>
-</body>
-</html>
+<script src="/assets/js/home.js"></script>
