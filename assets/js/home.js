@@ -2,10 +2,7 @@
 const GITHUB_USER = 'https://api.github.com/users/eidoriantan'
 
 $(document).ready(function () {
-  const date = new Date()
   const template = $('#repo-template').prop('content')
-
-  $('#current-year').text(date.getFullYear())
 
   $.ajax(GITHUB_USER + '/repos', {
     method: 'GET',
