@@ -6,7 +6,7 @@ email: eidoriantan@gmail.com
 baseurl: "/"
 url: "https://eidoriantan.github.io"
 logo: /assets/images/logo.png
-google_site_verification: pygHTY6j2sle4JJ1YmSCYlf8nxIxnq4u9bHe48Mc9do
+google_site_verification: FBvrVIic2U7X4GoPhm6gUquCHI1brR89vcQn-jepWGw
 
 plugins:
   - jekyll-seo-tag
