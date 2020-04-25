@@ -1,6 +1,9 @@
 
 title: eidoriantan
 tagline: My personal website using Jekyll on GitHub pages
+description: >-
+  Visit my personal website to know more about me and you can explore the
+  projects I built.
 author: Adriane Justine Tan
 email: eidoriantan@gmail.com
 baseurl: "/"
