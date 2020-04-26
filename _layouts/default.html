@@ -15,9 +15,15 @@
   <link href="/assets/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
   <link href="/assets/safari-pinned-tab.svg" rel="mask-icon" color="#121212">
   <link href="/assets/css/style.css" rel="stylesheet">
+  {% for stylesheet in page.stylesheets %}
+  <link href="{{ stylesheet }}" rel="stylesheet">
+  {% endfor %}
 
   <script src="/assets/js/jquery/jquery.min.js"></script>
   <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+  {% for script in page.scripts %}
+  <script src="{{ script }}"></script>
+  {% endfor %}
 
   {% seo title=false %}
   <script src="https://www.googletagmanager.com/gtag/js?id=UA-161214318-1" async></script>
@@ -33,7 +39,7 @@
 </head>
 
 <body>
-  <header class="navbar navbar-expand-md navbar-dark bg-dark header-pad sticky-top">
+  <header class="headerpad navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <a href="{{ site.url }}" class="navbar-brand">
       <img src="{{ site.logo }}" alt="eidoriantan" width="32" height="32" class="d-inline-block align-top">
       {{ site.title }}

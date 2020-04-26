@@ -6,28 +6,19 @@
   padding-bottom: 32px;
 }
 
-.header-pad {
-  padding-left: 24px;
-  padding-right: 24px;
-}
+$headerpad-sizes: (
+  xs: 24px,
+  sm: 64px,
+  md: 96px,
+  lg: 156px,
+  xl: 200px,
+);
 
-@include media-breakpoint-up(sm) {
-  .header-pad {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .header-pad {
-    padding-left: 96px;
-    padding-right: 96px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .header-pad {
-    padding-left: 156px;
-    padding-right: 156px;
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    .headerpad {
+      padding-left: #{map-get($headerpad-sizes, $breakpoint)};
+      padding-right: #{map-get($headerpad-sizes, $breakpoint)};
+    }
   }
 }
