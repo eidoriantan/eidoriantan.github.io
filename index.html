@@ -5,42 +5,39 @@ description: >-
   Visit my personal website to know more about me and you can explore the
   projects I built.
 keywords: eidoriantan, jekyll, personal, website, homepage
-scripts:
-  - /assets/js/home.js
 ---
 <main class="main container">
-  <div class="text-center mx-auto my-5 w-50">
-    <h3>Adriane Justine Tan</h3>
-    <p class="lead mb-5">Student, Web Developer, 日本語の学生</p>
-    <hr class="my-5">
+  <div class="text-center my-5">
+    <h3 class="mb-3">Adriane Justine Tan</h3>
+    <p class="lead mx-auto w-75">Student, Programmer, 日本語の学生</p>
+    <hr class="my-5 w-50">
   </div>
 
-  <div id="repos" class="text-center mx-auto my-5 w-50">
+  <div class="text-center my-5">
     <h3>Projects</h3>
-    <p class="lead mb-4">
-      Here are the projects that I'd been working on. Feel free to explore.
-    </p>
+    <p class="lead mx-auto w-75">Projects that I'd been working on</p>
+    <div class="my-5">
+      {% for repo in site.github.public_repositories %}
+      {% if repo.name == 'eidoriantan.github.io' %} {% continue %} {% endif %}
+      <div class="card shadow mx-auto mb-5 w-50">
+        <div class="card-body">
+          <h5 class="card-title">{{ repo.name }}</h5>
+          <p class="card-text">{{ repo.description }}</p>
+        </div>
+
+        <footer class="card-footer">
+          <a href="{{ repo.homepage }}" class="btn btn-primary btn-block stretched-link" role="button">Visit</a>
+        </footer>
+      </div>
+      {% endfor %}
+    </div>
+    <hr class="my-5 w-50">
   </div>
 
-  <div class="text-center mx-auto my-5 w-50">
-    <hr class="my-5">
-    <h3>Patreon</h3>
-    <p class="lead">If you wanted to support me, become a patreon!</p>
+  <div class="text-center my-5">
+    <p class="lead mx-auto w-75">Support me by becoming a patreon!</p>
     <a href="https://www.patreon.com/eidoriantan">
-      <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="217" height="51" alt="Patreon">
+      <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon" width="217" height="51">
     </a>
   </div>
 </main>
-
-<template id="repo-template">
-  <div class="card shadow w-75 mx-auto mb-5">
-    <div class="card-body">
-      <h5 class="card-title" data-temp="name"></h5>
-      <p class="card-text" data-temp="desc"></p>
-    </div>
-
-    <footer class="card-footer">
-      <a href="" class="btn btn-primary btn-block stretched-link" role="button" data-temp="link">Visit</a>
-    </footer>
-  </div>
-</template>
