@@ -12,5 +12,6 @@ logo: /assets/images/logo.png
 google_site_verification: FBvrVIic2U7X4GoPhm6gUquCHI1brR89vcQn-jepWGw
 
 plugins:
+  - jekyll-github-metadata
   - jekyll-seo-tag
   - jekyll-sitemap
