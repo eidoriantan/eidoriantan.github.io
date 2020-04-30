@@ -1,18 +1,16 @@
 
-incremental: true
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
 
-title: eidoriantan
-tagline: Personal website built with Jekyll
-description: >-
-  Visit my personal website to know more about me and you can explore the
-  projects I built.
+sass:
+  style: compressed
 
 author: Adriane Justine Tan
 email: eidoriantan@gmail.com
-baseurl: /
-url: https://eidoriantan.github.io
+
+tagline: Personal website built with Jekyll
 google_site_verification: FBvrVIic2U7X4GoPhm6gUquCHI1brR89vcQn-jepWGw
 
 style: dark
@@ -45,6 +43,3 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
-
-sass:
-  style: compressed
