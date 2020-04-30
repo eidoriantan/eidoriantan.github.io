@@ -1,8 +1,8 @@
 ---
 ---
 {
-    "name": "eidoriantan",
-    "short_name": "eidoriantan",
+    "name": "{{ site.title }}",
+    "short_name": "{{ site.title }}",
     "start_url": "./",
     "display": "standalone",
     "description": "{{ site.description }}",
