@@ -1,17 +1,50 @@
 
+incremental: true
+exclude:
+  - README.md
+
 title: eidoriantan
 tagline: Personal website built with Jekyll
 description: >-
   Visit my personal website to know more about me and you can explore the
   projects I built.
+
 author: Adriane Justine Tan
 email: eidoriantan@gmail.com
 baseurl: /
 url: https://eidoriantan.github.io
-logo: /assets/images/logo.png
 google_site_verification: FBvrVIic2U7X4GoPhm6gUquCHI1brR89vcQn-jepWGw
+
+style: dark
+style_color: "#2f363d"
+text_color: "#ffffff"
+
+social_media:
+  facebook: eidoriantan
+  twitter: eidoriantan
+
+topics:
+  - name: JavaScript
+    description: JavaScript is a programming language commonly used in web development.
+    web_url: https://github.com/topics/javascript
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
+
+  - name: Node.js
+    description: Node.js is an open source development platform for executing JavaScript code server-side.
+    web_url: https://github.com/topics/nodejs
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+
+  - name: Git
+    description: Git is a distributed version-control system for tracking changes in source code during software development.
+    web_url: https://github.com/topics/git
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png
 
 plugins:
   - jekyll-github-metadata
+  - jekyll-octicons
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
+
+sass:
+  style: compressed

@@ -1,11 +1,13 @@
+---
+---
 {
     "name": "eidoriantan",
     "short_name": "eidoriantan",
     "start_url": "./",
     "display": "standalone",
-    "description": "Visit my website and explore my projects and repositories",
-    "background_color": "#121212",
-    "theme_color": "#343a40",
+    "description": "{{ site.description }}",
+    "background_color": "{{ site.style_color }}",
+    "theme_color": "{{ site.style_color }}",
     "icons": [
         {
             "src": "/assets/android-chrome-192x192.png",

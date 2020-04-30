@@ -6,7 +6,8 @@
 
 The [website](https://eidoriantan.github.io) were automatically built by
 [Jekyll](https://jekyllrb.com) and was deployed using the
-[GitHub Pages](https://pages.github.com).
+[GitHub Pages](https://pages.github.com). The layout was inspired by
+[GitHub Personal Website](https://github.com/github/personal-website).
 
 Note that all resources including the images you found here are licensed under
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
