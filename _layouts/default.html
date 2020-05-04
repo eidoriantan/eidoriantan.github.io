@@ -1,7 +1,7 @@
 
 {% assign user = site.github.owner %}
 <!DOCTYPE html>
-<html class="min-height-full" lang="{{ site.lang | default: "en-US" }}">
+<html class="min-height-full" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -16,13 +16,6 @@
   <link href="{{ "/assets/favicon-16x16.png" | relative_url }}" rel="icon" type="image/png" sizes="16x16">
   <link href="{{ "/assets/safari-pinned-tab.svg" | relative_url }}" rel="mask-icon" color="{{ site.style_color }}">
   <link href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}" rel="stylesheet">
-  {% for stylesheet in page.stylesheets %}
-  <link href="{{ stylesheet }}" rel="stylesheet">
-  {% endfor %}
-
-  {% for script in page.scripts %}
-  <script src="{{ script }}"></script>
-  {% endfor %}
 
   {% seo title=false %}
   <script src="https://www.googletagmanager.com/gtag/js?id=UA-161214318-1" async></script>
