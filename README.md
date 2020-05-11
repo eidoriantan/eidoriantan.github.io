@@ -1,7 +1,6 @@
 
 ## Personal Website
 
-[![GitHub Deployments](https://img.shields.io/github/deployments/eidoriantan/eidoriantan.github.io/github-pages)](https://github.com/eidoriantan/eidoriantan.github.io/deployments)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Feidoriantan.tech)](https://eidoriantan.tech)
 
 The [website](https://eidoriantan.github.io) were automatically built by
