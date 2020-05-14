@@ -3,6 +3,15 @@ language: ruby
 rvm:
   - 2.6.3
 
+install:
+  - bundle install
+  - gem install jekyll
+  - gem install jekyll-github-metadata
+  - gem install jekyll-octicons
+  - gem install jekyll-seo-tag
+  - gem install jekyll-sitemap
+  - gem install jemoji
+
 script: bundle exec jekyll build
 
 sudo: false
