@@ -3,7 +3,7 @@ language: ruby
 rvm:
   - 2.6.3
 
-script: jekyll build
+script: bundle exec jekyll build
 
 sudo: false
 cache: bundler
