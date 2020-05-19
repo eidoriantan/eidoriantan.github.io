@@ -5,6 +5,7 @@
   {% assign repos = site.github.public_repositories | sort: "stargazers_count", "last" | reverse %}
   {% for repo in repos | limit: 9 %}
   {% if repo.name == 'eidoriantan.github.io' %} {% continue %} {% endif %}
+  {% if repo.fork %} {% continue %} {% endif %}
   <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
     <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow bg-white rounded-1 p-3">
       <div>
