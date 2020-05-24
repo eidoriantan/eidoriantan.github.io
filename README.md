@@ -3,7 +3,7 @@
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Feidoriantan.tech)](https://eidoriantan.tech)
 
-The [website](https://eidoriantan.github.io) were automatically built by
+The [website](https://eidoriantan.github.io) was automatically built by
 [Jekyll](https://jekyllrb.com) and was deployed using the
 [GitHub Pages](https://pages.github.com). The layout was inspired by
 [GitHub Personal Website](https://github.com/github/personal-website).
