@@ -1,13 +1,13 @@
 
 <div class="flex-self-stretch bg-gray-dark col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6" itemscope itemtype="http://schema.org/Person">
-  <img src="{{ user.avatar_url }}" content="{{ user.avatar_url }}" class="circle mb-3" alt="{{ user.login }}" style="max-width: 150px;" itemprop="image">
+  <img src="{{ user.avatar_url }}" class="circle mb-3" alt="{{ user.login }}" style="max-width: 150px;" itemprop="image">
   <h1 class="text-style mb-2 lh-condensed" itemprop="name">{{ user.name }}</h1>
   <p class="text-style mb-3 f4">{{ user.bio }}</p>
 
   <div class="f4 mb-6">
     <div class="text-style d-flex flex-items-center mb-3">
       {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ site.text_color }} aria-label:GitHub %}
-      <a href="https://github.com/{{ user.login }}" content="https://github.com/{{ user.login }}" class="text-style" itemprop="url">@{{ user.login }}</a>
+      <a href="https://github.com/{{ user.login }}" class="text-style" itemprop="url">@{{ user.login }}</a>
     </div>
 
     <div class="text-style d-flex flex-items-center mb-3">
