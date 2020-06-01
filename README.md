@@ -2,6 +2,7 @@
 ## Personal Website
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Feidoriantan.tech)](https://eidoriantan.tech)
+[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Feidoriantan.tech)](https://eidoriantan.tech)
 
 The [website](https://eidoriantan.github.io) was automatically built by
 [Jekyll](https://jekyllrb.com) and was deployed using the
