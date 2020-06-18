@@ -1,5 +1,6 @@
 
 exclude:
+  - vendor/
   - CNAME
   - Gemfile
   - Gemfile.lock
