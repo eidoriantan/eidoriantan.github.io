@@ -6,8 +6,6 @@ exclude:
   - Gemfile.lock
   - README.md
 
-include: [".well-known"]
-
 sass:
   style: compressed
 
