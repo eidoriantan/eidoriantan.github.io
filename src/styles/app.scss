@@ -2,6 +2,12 @@
 @use "sass:list";
 @import "./variables";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 #root { display: contents; }
 
 body {
