@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GitHub",
+    "url": "https://github.com/eidoriantan",
+    "image": "/images/socials/github.png"
+  },
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/eidoriantan",
+    "image": "/images/socials/facebook.png"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/eidoriantan",
+    "image": "/images/socials/twitter.png"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/eidoriantan/",
+    "image": "/images/socials/linkedin.png"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "mp3tag.js",
+    "image": "https://mp3tag.js.org/assets/images/banner.png",
+    "description": "mp3tag.js is an open sourced JavaScript library used to edit the metadata of audio files. It currently supports ID3v1, ID3v2.3, and ID3v2.4 tags.",
+    "keywords": ["javascript", "library", "mp3", "id3"],
+    "url": "https://mp3tag.js.org"
+  },
+  {
+    "name": "YouTube Downloader",
+    "image": "https://raw.githubusercontent.com/eidoriantan/youtube-downloader/main/public/assets/images/screenshot.jpg",
+    "description": "YouTube Downloader is an open-sourced, easy-to-use, mobile-friendly, and ad-free YouTube video downloader/converter.",
+    "keywords": ["youtube", "downloader", "converter"],
+    "url": "https://yt-downloader.eidoriantan.tk/"
+  },
+  {
+    "name": "kanji.js",
+    "image": null,
+    "description": "漢字 search/lookup library for Node.js and browsers. It uses the KANJIDIC dictionary file to search/lookup for the characters. The dictionary file is included so that it will work with browsers. The size of the distributed file is about ~2MB.",
+    "keywords": ["javascript", "library", "kanji", "search", "lookup"],
+    "url": "https://kanji.js.org"
+  },
+  {
+    "name": "URL Shortener",
+    "image": null,
+    "description": "Simple URL shortening website",
+    "keywords": ["url", "shorten"],
+    "url": "https://slnk.tk"
+  }
+]

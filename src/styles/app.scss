@@ -1,0 +1,104 @@
+
+@use "sass:list";
+@import "./variables";
+
+#root { display: contents; }
+
+body {
+  font-family: "Sawarabi Gothic", "Merriweather", serif;
+  color: list.nth($text-color, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sawarabi Gothic", "Open Sans", sans-serif;
+}
+
+h1 { font-size: 3.6em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root > header,
+#root > main,
+#root > footer {
+  margin: 4em auto;
+  width: 80%;
+  max-width: 640px;
+}
+
+#root > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  a {
+    margin-right: 2em;
+    &:hover { color: list.nth($text-color, 2); }
+  }
+}
+
+#root > footer {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-25 { width: 25%; }
+.w-50 { width: 50%; }
+.w-75 { width: 75%; }
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: .375rem 1.5rem;
+  color: $border-text;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $border-focus;
+    color: $border-text-focus;
+  }
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 32px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: $border-focus;
+      outline: 0;
+    }
+  }
+}
