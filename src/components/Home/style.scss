@@ -7,6 +7,17 @@
   top: 360px;
   left: -512px;
   opacity: 0.25;
+  width: 1024px;
+  height: 1024px;
+}
+
+@media (max-width: 576px) {
+  .bg-wireframe {
+    top: 480px;
+    left: -256px;
+    width: 512px;
+    height: 512px;
+  }
 }
 
 .blankslate {
