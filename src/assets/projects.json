@@ -26,5 +26,26 @@
     "description": "Simple URL shortening website",
     "keywords": ["url", "shorten"],
     "url": "https://slnk.tk"
+  },
+  {
+    "name": "LyricsFinder",
+    "image": null,
+    "description": "LyricsFinder is an open-sourced bot app built for Facebook's Messenger, powered by GENIUS. It looks and scrapes the lyrics from GENIUS then sends the lyrics to you",
+    "keywords": ["messenger", "bot", "webhook", "lyrics", "finder", "scrape"],
+    "url": "https://lyrics.eidoriantan.tk"
+  },
+  {
+    "name": "Messenger Translator",
+    "image": null,
+    "description": "Messenger Translator is a bot app built for Facebook's Messenger. It translates text in any language supported by Google Translate.",
+    "keywords": ["messenger", "bot", "webhook", "translate", "translator"],
+    "url": "https://translator.eidoriantan.tk"
+  },
+  {
+    "name": "Messenger Dictionary",
+    "image": null,
+    "description": "Messenger Dictionary is an English dictionary bot app for Messenger. You can send a word and it sends you the meaning of the word",
+    "keywords": ["messenger", "bot", "webhook", "dictionary", "english"],
+    "url": "https://dictionary.eidoriantan.tk"
   }
 ]
