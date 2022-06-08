@@ -58,6 +58,18 @@ module.exports = {
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveModule(resolveApp, 'src/index'),
+  appOthers: [
+    {
+      name: '404',
+      js: resolveModule(resolveApp, 'src/404'),
+      html: resolveApp('public/404.html')
+    },
+    {
+      name: 'contact',
+      js: resolveModule(resolveApp, 'src/index'),
+      html: resolveApp('public/contact.html')
+    }
+  ],
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),

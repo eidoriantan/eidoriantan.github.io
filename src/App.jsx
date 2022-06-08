@@ -5,6 +5,7 @@ import { Link, Navigate, Routes, Route, useLocation } from 'react-router-dom';
 import './styles/app.scss';
 import Home from './components/Home';
 import Contact from './components/Contact';
+import NotFound from './components/NotFound';
 
 function App () {
   const location = useLocation();
@@ -22,8 +23,11 @@ function App () {
 
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/*" element={<NotFound />} />
+          </Route>
         </Routes>
       </main>
 

@@ -186,6 +186,15 @@ module.exports = function (webpackEnv) {
     return loaders;
   };
 
+  const sources = {
+    index: paths.appIndexJs
+  };
+
+  for (let i = 0; i < paths.appOthers.length; i++) {
+    const page = paths.appOthers[i];
+    sources[page.name] = page.js;
+  }
+
   return {
     target: ['browserslist'],
     // Webpack noise constrained to errors and warnings
@@ -200,7 +209,7 @@ module.exports = function (webpackEnv) {
       : isEnvDevelopment && 'cheap-module-source-map',
     // These are the "entry points" to our application.
     // This means they will be the "root" imports that are included in JS bundle.
-    entry: paths.appIndexJs,
+    entry: sources,
     output: {
       // The build folder.
       path: paths.appBuild,
@@ -210,7 +219,7 @@ module.exports = function (webpackEnv) {
       // In development, it does not produce real files.
       filename: isEnvProduction
         ? 'static/js/[name].[contenthash:8].js'
-        : isEnvDevelopment && 'static/js/bundle.js',
+        : isEnvDevelopment && 'static/js/[name].bundle.js',
       // There are also additional JS chunk files if you use code splitting.
       chunkFilename: isEnvProduction
         ? 'static/js/[name].[contenthash:8].chunk.js'
@@ -419,7 +428,7 @@ module.exports = function (webpackEnv) {
                     },
                   ],
                 ],
-                
+
                 plugins: [
                   isEnvDevelopment &&
                     shouldUseReactRefresh &&
@@ -453,7 +462,7 @@ module.exports = function (webpackEnv) {
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled
                 cacheCompression: false,
-                
+
                 // Babel sourcemaps are needed for debugging into node_modules
                 // code.  Without the options below, debuggers like VSCode
                 // show incorrect code and set breakpoints on the wrong lines.
@@ -569,7 +578,9 @@ module.exports = function (webpackEnv) {
           {},
           {
             inject: true,
+            chunks: ['index'],
             template: paths.appHtml,
+            filename: 'index.html'
           },
           isEnvProduction
             ? {
@@ -589,6 +600,35 @@ module.exports = function (webpackEnv) {
             : undefined
         )
       ),
+      ...paths.appOthers.map(page => {
+        return new HtmlWebpackPlugin(
+          Object.assign(
+            {},
+            {
+              inject: true,
+              chunks: [page.name],
+              template: page.html,
+              filename: `${page.name}.html`
+            },
+            isEnvProduction
+              ? {
+                  minify: {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    removeRedundantAttributes: true,
+                    useShortDoctype: true,
+                    removeEmptyAttributes: true,
+                    removeStyleLinkTypeAttributes: true,
+                    keepClosingSlash: true,
+                    minifyJS: true,
+                    minifyCSS: true,
+                    minifyURLs: true,
+                  },
+                }
+              : undefined
+          )
+        )
+      }),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
       // https://github.com/facebook/create-react-app/issues/5358
@@ -642,9 +682,11 @@ module.exports = function (webpackEnv) {
             manifest[file.name] = file.path;
             return manifest;
           }, seed);
-          const entrypointFiles = entrypoints.main.filter(
-            fileName => !fileName.endsWith('.map')
-          );
+          let entrypointFiles = [];
+          for (let [entryFile, filename] of Object.entries(entrypoints)) {
+            let notMapFiles = filename.filter(filename => !filename.endsWith('.map'));
+            entrypointFiles = entrypointFiles.concat(notMapFiles);
+          }
 
           return {
             files: manifestFiles,

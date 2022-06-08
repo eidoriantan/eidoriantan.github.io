@@ -1,0 +1,18 @@
+
+@use "sass:list";
+@import "../../styles/variables";
+
+.blankslate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 32px - 16em);
+  margin-bottom: calc(16px + 8em);
+
+  h1 {
+    margin-bottom: 16px;
+    color: list.nth($header-color, 1);
+  }
+
+  p { line-height: 2em; }
+}
