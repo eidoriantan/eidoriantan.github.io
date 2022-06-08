@@ -52,6 +52,21 @@ a {
   text-align: center;
 }
 
+.cc-license {
+  margin: auto;
+  width: 80%;
+  font-size: 0.8em;
+
+  img {
+    width: 75px;
+    height: auto;
+    border-width: 0;
+  }
+}
+
+.d-block { display: block; }
+.d-none { display: none; }
+
 .mb-2 { margin-bottom: 32px; }
 
 .mx-auto {
