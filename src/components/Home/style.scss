@@ -52,6 +52,9 @@
 }
 
 .project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 5em 0;
   opacity: 0;
   border-bottom: #EBF2F6 1px solid;
@@ -59,9 +62,13 @@
   a:hover { color: list.nth($text-color, 2); }
 
   .project-image {
-    width: 100%;
-    height: auto;
+    width: 128px;
+    height: 128px;
     margin-bottom: 16px;
+  }
+
+  .project-info {
+    width: 492px;
   }
 
   .project-title {

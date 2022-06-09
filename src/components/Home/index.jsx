@@ -32,21 +32,23 @@ class Home extends React.Component {
     for (let i = 0; i < projects.length; i++) {
       const project = projects[i];
       const image = project.image
-        ? <img src={ project.image } alt={ project.name } className="project-image" />
+        ? <img src={ project.image } alt={ project.name } width={128} height={128} className="project-image" />
         : '';
 
       projectsElements.push(
         <div className="project" key={i} data-visible data-visible-class="anim-float-up" data-visible-percent="50">
           { image }
 
-          <h3 className="project-title">
-            <a href={ project.url }>{ project.name }</a>
-          </h3>
-          <p className="project-description">{ project.description }</p>
-          <div className="project-tags">
-            <span className="project-keywords">{ project.keywords.join(', ') }</span>
-            <span className="project-separator">|</span>
-            <a href={ project.url } className="project-url">{ project.url }</a>
+          <div className="project-info">
+            <h3 className="project-title">
+              <a href={ project.url }>{ project.name }</a>
+            </h3>
+            <p className="project-description">{ project.description }</p>
+            <div className="project-tags">
+              <span className="project-keywords">{ project.keywords.join(', ') }</span>
+              <span className="project-separator">|</span>
+              <a href={ project.url } className="project-url">{ project.url }</a>
+            </div>
           </div>
         </div>
       );
