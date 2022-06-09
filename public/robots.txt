@@ -1,3 +1,1 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+Sitemap: https://eidoriantan.tk/sitemap.xml
