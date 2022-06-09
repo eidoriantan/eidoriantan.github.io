@@ -97,6 +97,11 @@ a {
     border-color: $border-focus;
     color: $border-text-focus;
   }
+
+  &:disabled {
+    cursor: default;
+    background-color: $bg-disabled;
+  }
 }
 
 .form-group {
@@ -121,6 +126,11 @@ a {
     &:focus {
       border-color: $border-focus;
       outline: 0;
+    }
+
+    &:disabled {
+      cursor: default;
+      background-color: $bg-disabled;
     }
   }
 }
