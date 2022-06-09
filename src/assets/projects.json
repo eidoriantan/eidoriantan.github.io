@@ -1,14 +1,14 @@
 [
   {
     "name": "mp3tag.js",
-    "image": "https://mp3tag.js.org/assets/images/banner.png",
+    "image": "https://mp3tag.js.org/assets/images/logo.png",
     "description": "mp3tag.js is an open sourced JavaScript library used to edit the metadata of audio files. It currently supports ID3v1, ID3v2.3, and ID3v2.4 tags.",
     "keywords": ["javascript", "library", "mp3", "id3"],
     "url": "https://mp3tag.js.org"
   },
   {
     "name": "YouTube Downloader",
-    "image": "https://raw.githubusercontent.com/eidoriantan/youtube-downloader/main/public/assets/images/screenshot.jpg",
+    "image": "https://raw.githubusercontent.com/eidoriantan/youtube-downloader/main/public/icon.png",
     "description": "YouTube Downloader is an open-sourced, easy-to-use, mobile-friendly, and ad-free YouTube video downloader/converter.",
     "keywords": ["youtube", "downloader", "converter"],
     "url": "https://yt-downloader.eidoriantan.tk/"
@@ -22,28 +22,28 @@
   },
   {
     "name": "URL Shortener",
-    "image": null,
-    "description": "Simple URL shortening website",
-    "keywords": ["url", "shorten"],
+    "image": "https://raw.githubusercontent.com/eidoriantan/url-shortener/main/public/images/logo.png",
+    "description": "Easily shorten your URLs by using this tool. Reduce the length of long URLs into more nice and manageable links. You'll also be able to monitor traffic statistics of your links such as number of visits and referer.",
+    "keywords": ["javascript", "express", "react", "url", "shorten"],
     "url": "https://slnk.tk"
   },
   {
     "name": "LyricsFinder",
-    "image": null,
+    "image": "https://raw.githubusercontent.com/eidoriantan/messenger-lyrics/gh-pages/assets/images/icon.png",
     "description": "LyricsFinder is an open-sourced bot app built for Facebook's Messenger, powered by GENIUS. It looks and scrapes the lyrics from GENIUS then sends the lyrics to you",
     "keywords": ["messenger", "bot", "webhook", "lyrics", "finder", "scrape"],
     "url": "https://lyrics.eidoriantan.tk"
   },
   {
     "name": "Messenger Translator",
-    "image": null,
+    "image": "https://raw.githubusercontent.com/eidoriantan/messenger-translator/gh-pages/assets/images/icon.png",
     "description": "Messenger Translator is a bot app built for Facebook's Messenger. It translates text in any language supported by Google Translate.",
     "keywords": ["messenger", "bot", "webhook", "translate", "translator"],
     "url": "https://translator.eidoriantan.tk"
   },
   {
     "name": "Messenger Dictionary",
-    "image": null,
+    "image": "https://raw.githubusercontent.com/eidoriantan/messenger-dictionary/gh-pages/assets/images/icon.png",
     "description": "Messenger Dictionary is an English dictionary bot app for Messenger. You can send a word and it sends you the meaning of the word",
     "keywords": ["messenger", "bot", "webhook", "dictionary", "english"],
     "url": "https://dictionary.eidoriantan.tk"
