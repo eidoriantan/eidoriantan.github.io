@@ -1,0 +1,27 @@
+{
+  "files": {
+    "404.css": "https://eidoriantan.tk/static/css/404.803be2e2.css",
+    "404.js": "https://eidoriantan.tk/static/js/404.8c6157d2.js",
+    "index.css": "https://eidoriantan.tk/static/css/index.6cd38c50.css",
+    "index.js": "https://eidoriantan.tk/static/js/index.0b3c2152.js",
+    "contact.css": "https://eidoriantan.tk/static/css/contact.6cd38c50.css",
+    "contact.js": "https://eidoriantan.tk/static/js/contact.0b3c2152.js",
+    "index.html": "https://eidoriantan.tk/index.html",
+    "contact.html": "https://eidoriantan.tk/contact.html",
+    "404.html": "https://eidoriantan.tk/404.html",
+    "404.803be2e2.css.map": "https://eidoriantan.tk/static/css/404.803be2e2.css.map",
+    "404.8c6157d2.js.map": "https://eidoriantan.tk/static/js/404.8c6157d2.js.map",
+    "index.6cd38c50.css.map": "https://eidoriantan.tk/static/css/index.6cd38c50.css.map",
+    "index.0b3c2152.js.map": "https://eidoriantan.tk/static/js/index.0b3c2152.js.map",
+    "contact.6cd38c50.css.map": "https://eidoriantan.tk/static/css/contact.6cd38c50.css.map",
+    "contact.0b3c2152.js.map": "https://eidoriantan.tk/static/js/contact.0b3c2152.js.map"
+  },
+  "entrypoints": [
+    "static/css/404.803be2e2.css",
+    "static/js/404.8c6157d2.js",
+    "static/css/index.6cd38c50.css",
+    "static/js/index.0b3c2152.js",
+    "static/css/contact.6cd38c50.css",
+    "static/js/contact.0b3c2152.js"
+  ]
+}
