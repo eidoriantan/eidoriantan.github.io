@@ -45,8 +45,6 @@ class Home extends React.Component {
             </h3>
             <p className="project-description">{ project.description }</p>
             <div className="project-tags">
-              <span className="project-keywords">{ project.keywords.join(', ') }</span>
-              <span className="project-separator">|</span>
               <a href={ project.url } className="project-url">{ project.url }</a>
             </div>
           </div>
