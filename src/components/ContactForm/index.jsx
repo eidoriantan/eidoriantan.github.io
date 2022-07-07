@@ -51,7 +51,7 @@ class ContactForm extends React.Component {
     return (
       <div className={this.props.className}>
         <div className="contact-additional">
-          <div>Email: <a href="mailto:admin@eidoriantan.tk">admin@eidoriantan.tk</a></div>
+          <div>Email: <a href="mailto:admin@eidoriantan.me">admin@eidoriantan.me</a></div>
           <div>Mobile Number: <a href="tel://+639383983612">+639383983612</a></div>
           <p>You can also contact me through the form below!</p>
         </div>
