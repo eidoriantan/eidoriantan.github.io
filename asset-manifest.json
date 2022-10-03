@@ -1,27 +1,27 @@
 {
   "files": {
-    "404.css": "https://eidoriantan.me/static/css/404.803be2e2.css",
-    "404.js": "https://eidoriantan.me/static/js/404.e853150c.js",
-    "index.css": "https://eidoriantan.me/static/css/index.090ad172.css",
-    "index.js": "https://eidoriantan.me/static/js/index.bb70fd98.js",
-    "contact.css": "https://eidoriantan.me/static/css/contact.090ad172.css",
-    "contact.js": "https://eidoriantan.me/static/js/contact.bb70fd98.js",
-    "index.html": "https://eidoriantan.me/index.html",
-    "contact.html": "https://eidoriantan.me/contact.html",
-    "404.html": "https://eidoriantan.me/404.html",
-    "404.803be2e2.css.map": "https://eidoriantan.me/static/css/404.803be2e2.css.map",
-    "404.e853150c.js.map": "https://eidoriantan.me/static/js/404.e853150c.js.map",
-    "index.090ad172.css.map": "https://eidoriantan.me/static/css/index.090ad172.css.map",
-    "index.bb70fd98.js.map": "https://eidoriantan.me/static/js/index.bb70fd98.js.map",
-    "contact.090ad172.css.map": "https://eidoriantan.me/static/css/contact.090ad172.css.map",
-    "contact.bb70fd98.js.map": "https://eidoriantan.me/static/js/contact.bb70fd98.js.map"
+    "404.css": "/static/css/404.803be2e2.css",
+    "404.js": "/static/js/404.30d9bb66.js",
+    "index.css": "/static/css/index.090ad172.css",
+    "index.js": "/static/js/index.dbb29a5f.js",
+    "contact.css": "/static/css/contact.090ad172.css",
+    "contact.js": "/static/js/contact.dbb29a5f.js",
+    "index.html": "/index.html",
+    "contact.html": "/contact.html",
+    "404.html": "/404.html",
+    "404.803be2e2.css.map": "/static/css/404.803be2e2.css.map",
+    "404.30d9bb66.js.map": "/static/js/404.30d9bb66.js.map",
+    "index.090ad172.css.map": "/static/css/index.090ad172.css.map",
+    "index.dbb29a5f.js.map": "/static/js/index.dbb29a5f.js.map",
+    "contact.090ad172.css.map": "/static/css/contact.090ad172.css.map",
+    "contact.dbb29a5f.js.map": "/static/js/contact.dbb29a5f.js.map"
   },
   "entrypoints": [
     "static/css/404.803be2e2.css",
-    "static/js/404.e853150c.js",
+    "static/js/404.30d9bb66.js",
     "static/css/index.090ad172.css",
-    "static/js/index.bb70fd98.js",
+    "static/js/index.dbb29a5f.js",
     "static/css/contact.090ad172.css",
-    "static/js/contact.bb70fd98.js"
+    "static/js/contact.dbb29a5f.js"
   ]
 }
