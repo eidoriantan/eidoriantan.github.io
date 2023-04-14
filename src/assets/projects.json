@@ -1,7 +1,7 @@
 [
   {
     "name": "RADION FM",
-    "image": "https://www.radion.fm/android-chrome-512x512.png",
+    "image": "https://raw.githubusercontent.com/eidoriantan/eidoriantan.github.io/main/src/assets/radion.fm.png",
     "description": "RADION FM is a music streaming platform that creates genuine NFT music tracks with blockchain technology.",
     "url": "https://www.radion.fm"
   },
@@ -16,6 +16,24 @@
     "image": "https://raw.githubusercontent.com/eidoriantan/youtube-downloader/main/public/android-chrome-512x512.png",
     "description": "YouTube Downloader is an open-sourced, easy-to-use, mobile-friendly, and ad-free YouTube video downloader/converter.",
     "url": "https://yt-downloader.eidoriantan.me/"
+  },
+  {
+    "name": "Printu",
+    "image": "https://raw.githubusercontent.com/eidoriantan/printu/main/images/Logo.png",
+    "description": "Printu is a start up cloud-based printing service which incorporates seamless transaction and convenient printing experience through Quick Response (QR) code.",
+    "url": "https://printu.org"
+  },
+  {
+    "name": "TUPVLYMPICS'23",
+    "image": "https://raw.githubusercontent.com/ICpEP-SE-TUPV/tupvlympics/main/src/assets/logo.png",
+    "description": "A simple website used for TUPV Intramurals",
+    "url": "https://tupvlympics.printu.org"
+  },
+  {
+    "name": "ICpEP.SE TUPV",
+    "image": "https://raw.githubusercontent.com/ICpEP-SE-TUPV/icpep-se-tupv/main/public/android-chrome-512x512.png",
+    "description": "Official website of ICpEP.SE TUPV",
+    "url": "https://icpep-se-tupv.pages.dev"
   },
   {
     "name": "kanji.js",
