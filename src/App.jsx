@@ -29,7 +29,7 @@ class App extends React.Component {
 
         <footer>
           <div className="mb-2">
-            Copyright &copy; 2022 <a href={ process.env.PUBLIC_URL }>Adriane Justine Tan</a>
+            Copyright &copy; 2023 <a href={ process.env.PUBLIC_URL }>Adriane Justine Tan</a>
           </div>
 
           <div className="cc-license">
