@@ -48,21 +48,9 @@
     "url": "https://slnk.tk"
   },
   {
-    "name": "LyricsFinder",
-    "image": "https://raw.githubusercontent.com/eidoriantan/messenger-lyrics/gh-pages/assets/images/icon.png",
-    "description": "LyricsFinder is an open-sourced bot app built for Facebook's Messenger, powered by GENIUS. It looks and scrapes the lyrics from GENIUS then sends the lyrics to you",
-    "url": "https://lyrics.eidoriantan.me"
-  },
-  {
     "name": "Messenger Translator",
     "image": "https://raw.githubusercontent.com/eidoriantan/messenger-translator/gh-pages/assets/images/icon.png",
     "description": "Messenger Translator is a bot app built for Facebook's Messenger. It translates text in any language supported by Google Translate.",
     "url": "https://translator.eidoriantan.me"
-  },
-  {
-    "name": "Messenger Dictionary",
-    "image": "https://raw.githubusercontent.com/eidoriantan/messenger-dictionary/gh-pages/assets/images/icon.png",
-    "description": "Messenger Dictionary is an English dictionary bot app for Messenger. You can send a word and it sends you the meaning of the word",
-    "url": "https://dictionary.eidoriantan.me"
   }
 ]
