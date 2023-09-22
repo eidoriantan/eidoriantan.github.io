@@ -30,12 +30,6 @@
     "url": "https://tupvlympics.printu.org"
   },
   {
-    "name": "ICpEP.SE TUPV",
-    "image": "https://raw.githubusercontent.com/ICpEP-SE-TUPV/icpep-se-tupv/main/public/android-chrome-512x512.png",
-    "description": "Official website of ICpEP.SE TUPV",
-    "url": "https://icpep-se-tupv.pages.dev"
-  },
-  {
     "name": "kanji.js",
     "image": null,
     "description": "漢字 search/lookup library for Node.js and browsers. It uses the KANJIDIC dictionary file to search/lookup for the characters. The dictionary file is included so that it will work with browsers. The size of the distributed file is about ~2MB.",
