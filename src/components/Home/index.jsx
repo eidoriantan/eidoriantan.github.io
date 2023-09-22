@@ -59,16 +59,16 @@ class Home extends React.Component {
         <section className="blankslate">
           <h1>Adriane Justine Tan</h1>
           <p>
-            I'm a self-taught web developer skilled in backend development with
-            JavaScript, PHP, and SQL. I also have an experience in frontend
-            development with HTML and CSS, Node.js and React.js framework, Linux
-            operating system, and Git/GitHub.
+            I'm a self-taught full-stack web developer skilled in backend web development
+            using a variety of programming languages, frameworks, and databases. I'm skilled
+            with programming languages such as JavaScript, PHP, HTML, CSS, and SQL. When it
+            comes to frameworks, I'm comfortable working with Node.js, React.js, and CodeIgniter.
           </p>
         </section>
 
         <section className="section" data-visible data-visible-class="anim-fade" data-visible-percent="10">
           <h2>My Projects</h2>
-          <p className="section-description">These are my personal projects that I'm working on.</p>
+          <p className="section-description">Here are some of my personal and client projects</p>
           { projectsElements }
         </section>
 
