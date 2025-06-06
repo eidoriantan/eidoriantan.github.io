@@ -3,25 +3,25 @@
     "404.css": "/static/css/404.5d6c00d4.css",
     "404.js": "/static/js/404.91560d6a.js",
     "index.css": "/static/css/index.153b91ea.css",
-    "index.js": "/static/js/index.398efac4.js",
+    "index.js": "/static/js/index.a19ce286.js",
     "contact.css": "/static/css/contact.153b91ea.css",
-    "contact.js": "/static/js/contact.398efac4.js",
+    "contact.js": "/static/js/contact.a19ce286.js",
     "index.html": "/index.html",
     "contact.html": "/contact.html",
     "404.html": "/404.html",
     "404.5d6c00d4.css.map": "/static/css/404.5d6c00d4.css.map",
     "404.91560d6a.js.map": "/static/js/404.91560d6a.js.map",
     "index.153b91ea.css.map": "/static/css/index.153b91ea.css.map",
-    "index.398efac4.js.map": "/static/js/index.398efac4.js.map",
+    "index.a19ce286.js.map": "/static/js/index.a19ce286.js.map",
     "contact.153b91ea.css.map": "/static/css/contact.153b91ea.css.map",
-    "contact.398efac4.js.map": "/static/js/contact.398efac4.js.map"
+    "contact.a19ce286.js.map": "/static/js/contact.a19ce286.js.map"
   },
   "entrypoints": [
     "static/css/404.5d6c00d4.css",
     "static/js/404.91560d6a.js",
     "static/css/index.153b91ea.css",
-    "static/js/index.398efac4.js",
+    "static/js/index.a19ce286.js",
     "static/css/contact.153b91ea.css",
-    "static/js/contact.398efac4.js"
+    "static/js/contact.a19ce286.js"
   ]
 }
